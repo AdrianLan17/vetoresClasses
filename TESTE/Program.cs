@@ -12,14 +12,15 @@ namespace TESTE
         {
             pessoas[] lista = new pessoas[3];
 
-             
-            Console.WriteLine("Digite Seu tipo");
+            for (int i = 0; i < lista.Length; i++)
+            {
+                Console.WriteLine("Digite Seu Nome");
 
-            lista[0].Nome();
-            Console.WriteLine("{0}", lista[0].nome);
+                lista[i].Nome();
+                Console.WriteLine("{0}", lista[i].nome);
 
 
-
+            }
             Console.ReadKey();
         }
     } 
